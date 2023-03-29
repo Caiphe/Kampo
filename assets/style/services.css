@@ -1,0 +1,354 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "montserrat-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-light.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-regular";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-medium";
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-extra-bold";
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+.red-button {
+  width: 180px;
+  background-color: #C91111;
+  display: flex;
+  height: 45px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.red-button:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.site-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #223A66;
+  font-family: 'montserrat-medium', sans-serif;
+  position: relative;
+}
+.site-heading:after {
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color: #C91111;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.red-text {
+  color: #C91111;
+}
+.blue-text {
+  color: #223A66;
+}
+.white-text {
+  color: #fff;
+}
+.header-container {
+  height: 128px;
+  width: 100%;
+  background-color: #fff;
+}
+.header-container .top-header {
+  height: 45px;
+  width: 100%;
+  background-color: #223A66;
+}
+.header-container .top-header .custom-block-container {
+  width: 1035px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  margin: 0px auto;
+}
+.header-container .top-header .custom-block-container a {
+  font-family: 'montserrat-regular', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header-container .top-header .custom-block-container a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.header-container .main-header {
+  height: 81px;
+  width: 1035px;
+  margin: 0px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .main-header .header-logo {
+  width: 83px;
+}
+.header-container .main-header .header-logo img {
+  width: 100%;
+}
+.header-container .main-header .header-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.header-container .main-header .header-menu li {
+  margin-left: 40px;
+}
+.header-container .main-header .header-menu li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'montserrat-regular', sans-serif;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  color: #3e3e3e;
+  line-height: 15px;
+  transition: all 0.3s ease;
+}
+.header-container .main-header .header-menu li a.active:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #C91111;
+  left: 0;
+}
+.header-container .main-header .header-menu li a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.whatsapp-button {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #cdcdcd;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button img {
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button:hover img {
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+.bottom-container {
+  width: 100%;
+  height: 545px;
+  background-color: #E4EEF4;
+}
+.bottom-container .description-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+.bottom-container .description-container .descript-block {
+  margin-top: 180px;
+}
+.bottom-container .description-container .descript-block p {
+  font-size: 37px;
+  font-family: 'montserrat-bold', sans-serif;
+  width: 527px;
+}
+.bottom-container .description-container .descript-block .action-btn {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom-container .description-container .doct-image-container {
+  margin-top: -33px;
+}
+.footer-container {
+  background-color: #223A66;
+  height: 170px;
+  width: 100%;
+  border-bottom: solid 20px #C91111;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer-container .footer-kampo {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'montserrat-medium', sans-serif;
+}
+.footer-container .social-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.footer-container .social-icons li {
+  list-style: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-container .social-icons li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-container .copyright-text {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'montserrat-medium', sans-serif;
+  margin-top: 15px;
+}
+.cutom-centered-block {
+  width: 1035px;
+  position: relative;
+  margin: 0px auto;
+}
+.internal-header-banner {
+  height: 267px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.internal-header-banner .internal-mini-header {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  margin-bottom: 15px;
+}
+.internal-header-banner .internal-header {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'montserrat-bold', sans-serif;
+}
+.services-container {
+  min-height: 600px;
+  padding-top: 50px;
+}
+.services-container .services-heading {
+  font-size: 25px;
+  color: #223A66;
+  font-family: 'montserrat-medium', sans-serif;
+}
+.services-container .main-services-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.services-container .main-services-container .service-card {
+  width: 320px;
+  height: 260px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+.services-container .main-services-container .service-card .service-img {
+  width: 278px;
+  height: 160px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.services-container .main-services-container .service-card .service-name {
+  font-family: 'montserrat-bold', sans-serif;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.services-container .free-service-container {
+  background-color: #C91111;
+  margin-bottom: 70px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'montserrat-medium', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border-radius: 5px;
+}

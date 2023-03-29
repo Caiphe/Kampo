@@ -1,0 +1,447 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "montserrat-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-light.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-regular";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-medium";
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-extra-bold";
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+.red-button {
+  width: 180px;
+  background-color: #C91111;
+  display: flex;
+  height: 45px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.red-button:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.site-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #223A66;
+  font-family: 'montserrat-medium', sans-serif;
+  position: relative;
+}
+.site-heading:after {
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color: #C91111;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.red-text {
+  color: #C91111;
+}
+.blue-text {
+  color: #223A66;
+}
+.white-text {
+  color: #fff;
+}
+.header-container {
+  height: 128px;
+  width: 100%;
+  background-color: #fff;
+}
+.header-container .top-header {
+  height: 45px;
+  width: 100%;
+  background-color: #223A66;
+}
+.header-container .top-header .custom-block-container {
+  width: 1035px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  margin: 0px auto;
+}
+.header-container .top-header .custom-block-container a {
+  font-family: 'montserrat-regular', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header-container .top-header .custom-block-container a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.header-container .main-header {
+  height: 81px;
+  width: 1035px;
+  margin: 0px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .main-header .header-logo {
+  width: 83px;
+}
+.header-container .main-header .header-logo img {
+  width: 100%;
+}
+.header-container .main-header .header-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.header-container .main-header .header-menu li {
+  margin-left: 40px;
+}
+.header-container .main-header .header-menu li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'montserrat-regular', sans-serif;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  color: #3e3e3e;
+  line-height: 15px;
+  transition: all 0.3s ease;
+}
+.header-container .main-header .header-menu li a.active:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #C91111;
+  left: 0;
+}
+.header-container .main-header .header-menu li a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.whatsapp-button {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #cdcdcd;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button img {
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button:hover img {
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+.bottom-container {
+  width: 100%;
+  height: 545px;
+  background-color: #E4EEF4;
+}
+.bottom-container .description-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+.bottom-container .description-container .descript-block {
+  margin-top: 180px;
+}
+.bottom-container .description-container .descript-block p {
+  font-size: 37px;
+  font-family: 'montserrat-bold', sans-serif;
+  width: 527px;
+}
+.bottom-container .description-container .descript-block .action-btn {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom-container .description-container .doct-image-container {
+  margin-top: -33px;
+}
+.footer-container {
+  background-color: #223A66;
+  height: 170px;
+  width: 100%;
+  border-bottom: solid 20px #C91111;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer-container .footer-kampo {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'montserrat-medium', sans-serif;
+}
+.footer-container .social-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.footer-container .social-icons li {
+  list-style: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-container .social-icons li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-container .copyright-text {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'montserrat-medium', sans-serif;
+  margin-top: 15px;
+}
+.cutom-centered-block {
+  width: 1035px;
+  position: relative;
+  margin: 0px auto;
+}
+.internal-header-banner {
+  height: 267px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.internal-header-banner .internal-mini-header {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  margin-bottom: 15px;
+}
+.internal-header-banner .internal-header {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'montserrat-bold', sans-serif;
+}
+.book-appointment-container {
+  display: flex;
+  justify-content: space-between;
+}
+.book-appointment-container .each-appointment-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.book-appointment-container .each-appointment-container:nth-child(1) {
+  width: 60%;
+  position: relative;
+}
+.book-appointment-container .each-appointment-container:nth-child(2) {
+  width: 34%;
+}
+.book-appointment-container .each-appointment-container .doted-img {
+  position: absolute;
+  bottom: 84px;
+  right: 0px;
+  z-index: 0;
+  width: 196px;
+  height: 196px;
+  z-index: -1;
+}
+.book-appointment-container .book-appointment-heading {
+  font-size: 25px;
+  color: #223A66;
+  font-family: 'montserrat-bold', sans-serif;
+}
+.book-appointment-container .appointment-form {
+  position: relative;
+  padding-bottom: 50px;
+}
+.book-appointment-container .appointment-form .field-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.book-appointment-container .appointment-form .field-container .input-field {
+  width: 49%;
+  height: 45px;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: 'montserrat-regular', sans-serif;
+  color: #434343;
+  border: none;
+  background-color: #E4EEF4;
+}
+.book-appointment-container .appointment-form .department-select {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: 'montserrat-regular', sans-serif;
+  color: #434343;
+  border: none;
+  outline: none;
+  background-color: #E4EEF4;
+}
+.book-appointment-container .appointment-form .your-message {
+  width: 100%;
+  height: 150px;
+  background-color: #E4EEF4;
+  border-radius: 0px;
+  border: none;
+  font-family: 'montserrat-regular', sans-serif;
+  padding: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  display: flex;
+  margin-top: 20px;
+}
+.book-appointment-container .appointment-form .form-btn {
+  width: 180px;
+  background-color: #C91111;
+  height: 45px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.book-appointment-container .appointment-form .form-btn:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.book-appointment-container .appointment-details {
+  position: relative;
+}
+.book-appointment-container .appointment-details .emergency-heading {
+  font-size: 17px;
+  font-family: 'montserrat-medium', sans-serif;
+  margin-top: 15px;
+}
+.book-appointment-container .appointment-details .emergency-contact {
+  color: #C91111;
+  font-size: 25px;
+  font-family: 'montserrat-bold', sans-serif;
+  margin-top: 15px;
+}
+.book-appointment-container .appointment-details .bank-details-container {
+  margin-top: 30px;
+  position: relative;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block {
+  position: relative;
+  display: flex;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul {
+  list-style: none;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul li {
+  font-size: 15px;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul.bank-heading {
+  font-family: 'montserrat-medium', sans-serif;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul.bank-heading li {
+  color: #000;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul.banking-details {
+  margin-left: 15px;
+}
+.book-appointment-container .appointment-details .bank-details-container .banking-block ul.banking-details li {
+  font-family: 'montserrat-regular', sans-serif;
+  color: #606060;
+}
+.book-appointment-container .appointment-details .medical-aids-container {
+  width: 400px;
+  background-color: #C91111;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'montserrat-bold', sans-serif;
+  padding: 10px;
+  border-radius: 2px;
+}

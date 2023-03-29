@@ -1,0 +1,460 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "montserrat-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-light.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-regular";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-medium";
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-extra-bold";
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Awesome Font"), url("/assets/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+.red-button {
+  width: 180px;
+  background-color: #C91111;
+  display: flex;
+  height: 45px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.red-button:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.site-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #223A66;
+  font-family: 'montserrat-medium', sans-serif;
+  position: relative;
+}
+.site-heading:after {
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color: #C91111;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.red-text {
+  color: #C91111;
+}
+.blue-text {
+  color: #223A66;
+}
+.white-text {
+  color: #fff;
+}
+.header-container {
+  height: 128px;
+  width: 100%;
+  background-color: #fff;
+}
+.header-container .top-header {
+  height: 45px;
+  width: 100%;
+  background-color: #223A66;
+}
+.header-container .top-header .custom-block-container {
+  width: 1035px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  margin: 0px auto;
+}
+.header-container .top-header .custom-block-container a {
+  font-family: 'montserrat-regular', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header-container .top-header .custom-block-container a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.header-container .main-header {
+  height: 81px;
+  width: 1035px;
+  margin: 0px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .main-header .header-logo {
+  width: 83px;
+}
+.header-container .main-header .header-logo img {
+  width: 100%;
+}
+.header-container .main-header .header-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.header-container .main-header .header-menu li {
+  margin-left: 40px;
+}
+.header-container .main-header .header-menu li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'montserrat-regular', sans-serif;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  color: #3e3e3e;
+  line-height: 15px;
+  transition: all 0.3s ease;
+}
+.header-container .main-header .header-menu li a.active:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #C91111;
+  left: 0;
+}
+.header-container .main-header .header-menu li a:hover {
+  color: #C91111;
+  transition: all 0.3s ease;
+}
+.whatsapp-button {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #cdcdcd;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button img {
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button:hover img {
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+.bottom-container {
+  width: 100%;
+  height: 545px;
+  background-color: #E4EEF4;
+}
+.bottom-container .description-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+.bottom-container .description-container .descript-block {
+  margin-top: 180px;
+}
+.bottom-container .description-container .descript-block p {
+  font-size: 37px;
+  font-family: 'montserrat-bold', sans-serif;
+  width: 527px;
+}
+.bottom-container .description-container .descript-block .action-btn {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom-container .description-container .doct-image-container {
+  margin-top: -33px;
+}
+.footer-container {
+  background-color: #223A66;
+  height: 170px;
+  width: 100%;
+  border-bottom: solid 20px #C91111;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer-container .footer-kampo {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'montserrat-medium', sans-serif;
+}
+.footer-container .social-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.footer-container .social-icons li {
+  list-style: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-container .social-icons li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-container .copyright-text {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'montserrat-medium', sans-serif;
+  margin-top: 15px;
+}
+.cutom-centered-block {
+  width: 1035px;
+  position: relative;
+  margin: 0px auto;
+}
+.internal-header-banner {
+  height: 267px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.internal-header-banner .internal-mini-header {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'montserrat-regular', sans-serif;
+  margin-bottom: 15px;
+}
+.internal-header-banner .internal-header {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'montserrat-bold', sans-serif;
+}
+.about-us-description {
+  width: 664px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'montserrat-medium', sans-serif;
+  color: #575757;
+}
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.full-block-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 537px;
+}
+.full-block-container .half-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.full-block-container .details-gray {
+  background-color: #F2F2F2;
+}
+.full-block-container .details-gray .data-container {
+  width: 391px;
+  text-align: center;
+  margin: 150px auto;
+}
+.full-block-container .details-gray .data-container .block-heading {
+  font-family: 'montserrat-bold', sans-serif;
+  font-size: 30px;
+  color: #C91111;
+}
+.full-block-container .details-gray .data-container .half-block-text {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: 'montserrat-regular', sans-serif;
+}
+.full-block-container .details-red {
+  background-color: #C91111;
+}
+.full-block-container .details-red .data-container {
+  width: 391px;
+  text-align: center;
+  margin: 150px auto;
+}
+.full-block-container .details-red .data-container .block-heading {
+  font-family: 'montserrat-bold', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+.full-block-container .details-red .data-container .half-block-text {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: 'montserrat-regular', sans-serif;
+  color: #fff;
+}
+.value-container {
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.value-container .doted-img-value {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+.value-container .value-container-details {
+  width: 960px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.value-container .value-container-details .each-value {
+  width: 276px;
+  height: 251px;
+  background: #FFFFFF;
+  border: 0.5px solid #BBBBBB;
+  box-sizing: border-box;
+  padding: 27px;
+  border-radius: 5px;
+}
+.value-container .value-container-details .each-value .value-heading {
+  color: #C91111;
+  font-size: 18px;
+  font-family: 'montserrat-bold', sans-serif;
+  text-align: center;
+}
+.value-container .value-container-details .each-value p {
+  font-size: 15px;
+  font-family: 'montserrat-regular', sans-serif;
+  margin-top: 25px;
+  color: #575757;
+}
+.our-team-container {
+  width: 100%;
+  background-color: #F9F9F9;
+  box-sizing: border-box;
+  padding-top: 60px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.our-team-container .doted-img-team {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  z-index: 1;
+}
+.our-team-container .team-card-container {
+  width: 1050px;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #F9F9F9;
+  z-index: 2;
+}
+.our-team-container .team-card-container .each-team-card {
+  width: 511px;
+  height: 256px;
+  box-shadow: 10px 10px 71px -16px rgba(148, 148, 148, 0.58);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  z-index: 2;
+}
+.our-team-container .team-card-container .each-team-card .doc-profile-image {
+  height: 259px;
+  width: 209px;
+  background-color: #223A66;
+}
+.our-team-container .team-card-container .each-team-card .doctor-details {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.our-team-container .team-card-container .each-team-card .doctor-details h4 {
+  font-family: 'montserrat-medium', sans-serif;
+}
+.our-team-container .team-card-container .each-team-card .doctor-details .specialities-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #878787;
+  font-family: 'montserrat-regular', sans-serif;
+  margin-top: 25px;
+}
+.our-team-container .team-card-container .each-team-card .doctor-details .specialities-list {
+  width: 200px;
+  font-family: 'montserrat-regular', sans-serif;
+  font-size: 15px;
+  margin-top: 7px;
+  border-bottom: solid 2px #cdcdcd;
+  padding-bottom: 20px;
+}

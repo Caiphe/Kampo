@@ -1,0 +1,59 @@
+@import "custom.less";
+
+.services-container{
+    min-height: 600px;
+    padding-top: 50px;
+
+    .services-heading{
+        font-size: 25px;
+        color: @blue;
+        font-family: @MontMedium;
+    }
+
+    .main-services-container{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        .service-card{
+            width: 320px;
+            height: 260px;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.06);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+
+            .service-img{
+                width: 278px;
+                height: 160px;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .service-name{
+                font-family: @MontBold;
+                font-size: 17px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .free-service-container{
+        background-color: @red;
+        margin-bottom: 70px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: @MontMedium;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+        border-radius: 5px;
+    }
+}

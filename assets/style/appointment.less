@@ -1,0 +1,171 @@
+@import "custom.less";
+
+.book-appointment-container{
+    display: flex;
+    justify-content: space-between;
+
+    .each-appointment-container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+
+        &:nth-child(1){
+            width: 60%;
+            position: relative;
+        }
+
+        &:nth-child(2){
+            width: 34%;
+        }
+
+        .doted-img{
+            position: absolute;
+            bottom: 84px;
+            right: 0px;
+            z-index: 0;
+            width: 196px;
+            height: 196px;
+            z-index: -1;
+        }
+    }
+
+    .book-appointment-heading{
+        font-size: 25px;
+        color: @blue;
+        font-family: @MontBold;
+    }
+
+    .appointment-form{
+        position: relative;
+        padding-bottom: 50px;
+
+        .field-container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            .input-field{
+                width: 49%;
+                height: 45px;
+                outline: none;
+                box-sizing: border-box;
+                padding-left: 15px;
+                font-size: 15px;
+                font-family: @MontRegular;
+                color: #434343;
+                border: none;
+                background-color: #E4EEF4;
+            }
+        }
+
+        .department-select{
+            display: flex;
+            width: 100%;
+            height: 45px;
+            margin-top: 20px;
+            padding-left: 10px;
+            font-size: 15px;
+            font-family: @MontRegular;
+            color: #434343;
+            border: none;
+            outline: none;
+            background-color: #E4EEF4;
+        }
+
+        .your-message{
+            width: 100%;
+            height: 150px;
+            background-color: #E4EEF4;
+            border-radius: 0px;
+            border: none;
+            font-family: @MontRegular;
+            padding: 15px;
+            font-size: 15px;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+            display: flex;
+            margin-top: 20px;
+        }
+    
+        .form-btn{
+            width: 180px;
+            background-color: @red;
+            height: 45px;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+    
+            &:hover{
+                background-color: @blue;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+
+    // Appointment details container
+    .appointment-details{
+        position: relative;
+
+        .emergency-heading{
+            font-size: 17px;
+            font-family: @MontMedium;
+            margin-top:15px;
+        }
+
+        .emergency-contact{
+            color: @red;
+            font-size: 25px;
+            font-family: @MontBold;
+            margin-top: 15px;
+        }
+
+        .bank-details-container{
+            margin-top: 30px;
+            position: relative;
+
+            .banking-block{
+                position: relative;
+                display: flex;
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        font-size: 15px;
+                    }
+
+                    &.bank-heading{
+                        font-family: @MontMedium;
+
+                        li{
+                            color: #000;
+                        }
+                    }
+
+                    &.banking-details{
+                        margin-left: 15px;
+
+                        li{
+                            font-family: @MontRegular;
+                            color: #606060;
+                        }
+                    }
+                }
+            }
+        }
+
+        .medical-aids-container{
+            width: 400px;
+            background-color: @red;
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+            font-family: @MontBold;
+            padding: 10px;
+            border-radius: 2px;
+        }
+    }
+}
