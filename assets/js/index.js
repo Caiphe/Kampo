@@ -10,3 +10,6 @@ function loadWindow(){
 
     }, 200);
 }
+
+
+document.querySelector('#site-year').innerHTML = new Date().getFullYear();

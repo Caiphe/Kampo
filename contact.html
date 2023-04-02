@@ -12,7 +12,7 @@
         <div class="top-header">
             <div class="custom-block-container">
                 <a href="">kampomedic@outlook.com</a>
-                <a>Call Now : 031 000 0000</a>
+                <a>Call Now : +27 61 583 5469</a>
             </div>
         </div>
         <div class="main-header">
@@ -33,6 +33,7 @@
         <h3 class="internal-header">Contact Us</h3>
     </div>
 
+    <div class="toast-error" id="toast-error"></div>
 
     <!-- Contact us detials -->
     <div class="cutom-centered-block contact-details-container">
@@ -56,16 +57,16 @@
     <!-- Contact us form -->
     <div class="cutom-centered-block contact-form-container">
         <h4 class="form-heading">Fill in the form bellow!</h4>
-        <form class="contact-us-form">
+        <form class="contact-us-form contact-form" id="contact-form" name="contact-form" data-netlify="true">
             <div class="form-block-container">
                 <input type="text" placeholder="Full name" name="full-name" class="input-field" />
-                <input type="email" placeholder="Email address" name="email-address" class="input-field" />
+                <input type="email" placeholder="Email address" name="email" class="input-field" />
             </div>
             <div class="form-block-container">
-                <input type="text" placeholder="Query or Topic" name="full-name" class="input-field" />
-                <input type="text" placeholder="Phone number" name="email-address" class="input-field" />
+                <input type="text" placeholder="Query or Topic" name="query" class="input-field" />
+                <input type="text" placeholder="Phone number" name="phone-number" class="input-field" />
             </div>
-            <textarea class="your-message" placeholder="Your message here"></textarea>
+            <textarea class="your-message" name="message" placeholder="Your message here"></textarea>
             <button type="submit" class="form-btn">SUBMIT</button>
         </form>
     </div>
@@ -106,4 +107,6 @@
         </ul>
         <p class="copyright-text"> © 2023 Kampo Medical</p>
     </footer>
+
+    <script src="/assets/js/contact.js"></script>
 </body>

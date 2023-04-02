@@ -106,3 +106,57 @@
     width: 100%;
     height: 450px;
 }
+
+.toast-error{
+    width: 180px;
+    position: fixed;
+    top: 20px;
+    background-color: #bb1e4f;
+    z-index: 3;
+    right: -400px;
+    padding: 50px 25px 25px 25px;
+    color: 15px;
+    font-family: 13px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    line-height: 11px;
+
+    &:after{
+        content: 'ERROR';
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        font-family: @MontBold;
+    }
+
+    &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 22px;
+        left: 25px;
+    }
+
+    &.show{
+        right: 20px;
+        transition: all .3s ease-in-out;
+    }
+
+    span{
+        display: block;
+        font-family: @MontRegular;
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 20px;
+        color: #fff;
+        display: block;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: -5px;
+    }
+}

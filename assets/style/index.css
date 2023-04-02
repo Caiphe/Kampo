@@ -354,6 +354,7 @@
   font-family: 'montserrat-bold', sans-serif;
   width: 471px;
   font-size: 45px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .slideshow .cutom-centered-block .blue-button {
   width: 300px;
@@ -509,18 +510,38 @@
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
-.services-container .main-services-container .service-card .service-img {
+.services-container .main-services-container .service-card .service-img-container {
   width: 278px;
   height: 160px;
+  overflow: hidden;
+}
+.services-container .main-services-container .service-card .service-img-container .service-img {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
 }
 .services-container .main-services-container .service-card .service-name {
   font-family: 'montserrat-bold', sans-serif;
   font-size: 17px;
   margin-top: 15px;
+  color: #242424;
+}
+.services-container .main-services-container .service-card:hover {
+  margin-top: -10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #223A66;
+}
+.services-container .main-services-container .service-card:hover .service-img-container .service-img {
+  transition: all 0.3s ease-in-out;
+}
+.services-container .main-services-container .service-card:hover .service-name {
+  color: #fff;
 }
 .services-container .button-container {
   display: flex;
