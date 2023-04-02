@@ -7,6 +7,8 @@
     <link href="/assets/style/index.css" rel="stylesheet" />
     <link href="/assets/style/slick-theme.css" rel="stylesheet" />
     <link href="/assets/style/slick.css" rel="stylesheet" />
+    <link href="/assets/style/animate.css" rel="stylesheet" />
+    <link href="/assets/style/aos.css" rel="stylesheet" />
     <title>Kampo Medical Center</title>
 </head>
 <body>
@@ -71,7 +73,8 @@
 
     <div class="gray-container">
         <div class="call-to-action-container cutom-centered-block">
-            <div class="each-action">
+
+            <div class="each-action animated call-to-action-one">
                 <img src="/assets/img/icons/doctor.svg" />
                 <div class="small-text">24 Hours Service</div>
                 <h4 class="action-heading">Online Appointment</h4>
@@ -81,7 +84,8 @@
     
                 <a class="action-btn">APPOINTMENT</a>
             </div>
-            <div class="each-action">
+
+            <div class="each-action animated2 call-to-action-two">
                 <img src="/assets/img/icons/clock.svg" />
                 <div class="small-text">Timing Schedule</div>
                 <h4 class="action-heading mb-25">Working Hours</h4>
@@ -100,30 +104,30 @@
                     <span>Sat :</span>
                     <span>12:00 - 17:00</span>
                 </div>
-    
             </div>
-            <div class="each-action">
+
+            <div class="each-action animated3 call-to-action-three">
                 <img src="/assets/img/icons/call-user.svg" />
                 <div class="small-text">Emergency Cases</div>
                 <h4 class="action-heading">031 000 0000</h4>
                 <div class="action-description">
                     Use the above office number to get in touch with us in case of Emergency 
                 </div>
-    
             </div>
+
         </div>
     
         <!-- welcome container block -->
         <div class="welcome-description cutom-centered-block">
             <div class="each-description img-container">
-                <div class="descript" style="background-image: url('/assets/img/descript-1.jpg');"></div>
-                <div class="descript" style="background-image: url('/assets/img/descript-1.jpg');"></div>
+                <div class="descript" data-aos="fade-down" data-aos-duration="500" data-aos-offset="100" style="background-image: url('/assets/img/descript-1.jpg');"></div>
+                <div class="descript" data-aos="fade-up" data-aos-duration="500" data-aos-offset="150" style="background-image: url('/assets/img/descript-1.jpg');"></div>
             </div>
             <div class="each-description">
-                <div class="descript-classic" style="background-image: url('/assets/img/descript-3.jpg');"></div>
+                <div class="descript-classic" data-aos="fade-right" data-aos-offset="120" style="background-image: url('/assets/img/descript-3.jpg');"></div>
             </div>
 
-            <div class="each-description text-decription">
+            <div class="each-description text-decription" data-aos="fade-left" data-aos-offset="150">
                 <h4 class="description-heading">Personal care & healthy living</h4>
                 <p class="descripiton-text">
                     We give you easy access to a doctor, optometrist or dentist ... in our network, so you can get quality, private day-to-day healthcare at an affordable cost – without the added stress and hassles.
@@ -132,26 +136,26 @@
 
             </div>
 
-            <img src="/assets/img/icons/doted-design.svg" class="doted-img" />
+            <img data-aos="fade-up" data-aos-offset="400" src="/assets/img/icons/doted-design.svg" class="doted-img" />
 
         </div>
     </div>
 
     <!-- Home services -->
     <div class="services-container cutom-centered-block">
-        <h3 class="service-heading site-heading">Services</h3>
+        <h3 class="service-heading site-heading" data-aos="fade-up" data-aos-duration="100" data-aos-offset="100">Services</h3>
         <div class="main-services-container">
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="300" data-aos-offset="100">
                 <div class="service-img" style="background-image: url('/assets/img/services/service.jpg');"></div>
                 <div class="service-name">Consultation</div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="500" data-aos-offset="100">
                 <div class="service-img" style="background-image: url('/assets/img/services/service-lab.jpg');"></div>
                 <div class="service-name">Laboratory Services</div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100">
                 <div class="service-img" style="background-image: url('/assets/img/services/service.jpg');"></div>
                 <div class="service-name">Family Planning</div>
             </div>
@@ -161,11 +165,11 @@
             <a class="red-button">VIEW MORE</a>
         </div>
 
-        <img src="/assets/img/icons/doted-design.svg" class="doted-img" />
+        <img src="/assets/img/icons/doted-design.svg" data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" class="doted-img" />
     </div>
 
     <div class="testimonanials-container">
-        <div class="cutom-centered-block">
+        <div class="cutom-centered-block" data-aos="fade-up" data-aos-duration="300" data-aos-offset="100">
             <h3 class="service-heading site-heading">What Patients say about us</h3>
             <div class="testimonials-container">
                 <div class="testimonials-slider">
@@ -215,7 +219,7 @@
     <!-- Bottom container -->
     <div class="bottom-container">
         <div class="cutom-centered-block description-container">
-            <div class="descript-block">
+            <div class="descript-block" data-aos="fade-right" data-aos-duration="400" data-aos-offset="150">
                 <p>
                     <span class="red-text">We are pleased to offer you the chance</span> 
                     <span class="blue-text">to have the health you need.</span>
@@ -225,7 +229,7 @@
 
             </div>
 
-            <div class="doct-image-container">
+            <div class="doct-image-container" data-aos="fade-left" data-aos-duration="300" data-aos-offset="100">
                 <img src="/assets/img/footer-doctor.png" />
             </div>
 
@@ -243,9 +247,10 @@
         <p class="copyright-text"> © 2023 Kampo Medical</p>
     </footer>
 
-
     <script src="/assets/js/jquery-2.js"></script>
     <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/aos.js"></script>
 
     <script>
         $('.slider').slick({
@@ -279,6 +284,8 @@
             prevArrow: $('.prev-testimonial'),
             nextArrow: $('.next-testimonial'),
         });
+
+        AOS.init();
     </script>
 </body>
 </html>
