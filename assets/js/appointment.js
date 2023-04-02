@@ -5,17 +5,15 @@ var toastError = document.querySelector('.toast-error');
 function submitContact(ev){
     var form = this.elements;
     var errors = [];
-    var mailformat = /^[\w\.\-\+]+@[\w\.\-]+\.[a-z]{2,5}$/;
-    var phoneRegex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
     var phoneInput = form['phone-number'];
 
     if(form['full-name'].value === ''){
         errors.push("<span> Full name required </span>");
     }
 
-    if(form['date-field'].value){
-        errors.push("<span> Date required </span>");
-    }
+    // if(form['date-field'].value){
+    //     errors.push("<span> Date required </span>");
+    // }
 
     if(phoneInput.value === ''){
         errors.push("<span> Phone number <br /> required </span>");
