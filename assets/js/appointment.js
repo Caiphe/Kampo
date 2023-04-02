@@ -11,10 +11,6 @@ function submitContact(ev){
         errors.push("<span> Full name required </span>");
     }
 
-    // if(form['date-field'].value){
-    //     errors.push("<span> Date required </span>");
-    // }
-
     if(phoneInput.value === ''){
         errors.push("<span> Phone number <br /> required </span>");
     }
