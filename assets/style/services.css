@@ -321,23 +321,43 @@
   width: 320px;
   height: 260px;
   background: #FFFFFF;
-  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.06);
+  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 35px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
 }
-.services-container .main-services-container .service-card .service-img {
+.services-container .main-services-container .service-card .service-img-container {
   width: 278px;
   height: 160px;
+  overflow: hidden;
+}
+.services-container .main-services-container .service-card .service-img-container .service-img {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
 }
 .services-container .main-services-container .service-card .service-name {
   font-family: 'montserrat-bold', sans-serif;
   font-size: 17px;
   margin-top: 15px;
+  color: #242424;
+}
+.services-container .main-services-container .service-card:hover {
+  margin-top: -10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+.services-container .main-services-container .service-card:hover .service-img-container .service-img {
+  transition: all 0.3s ease-in-out;
+}
+.services-container .main-services-container .service-card:hover .service-name {
+  color: #C91111;
 }
 .services-container .free-service-container {
   background-color: #C91111;

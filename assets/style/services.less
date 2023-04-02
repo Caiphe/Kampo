@@ -21,24 +21,51 @@
             width: 320px;
             height: 260px;
             background: #FFFFFF;
-            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.06);
+            box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.06);
             border-radius: 10px;
             padding: 20px;
             box-sizing: border-box;
-            margin-bottom: 35px;
+            transition: all .3s ease-in-out;
+            margin-bottom: 30px;
 
-            .service-img{
+            .service-img-container{
                 width: 278px;
                 height: 160px;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
+                overflow: hidden;
+
+                .service-img{
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    transition: all .3s ease-in-out;
+                }
             }
 
             .service-name{
                 font-family: @MontBold;
                 font-size: 17px;
                 margin-top: 15px;
+                color: #242424;
+            }
+
+            &:hover{
+                margin-top: -10px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                // background-color: @blue;
+                background-color: #cdcdcd;
+
+                .service-img-container{
+                    .service-img{
+                        // transform: scale(1.1);
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .service-name{
+                    color: @red;
+                }
             }
         }
     }
