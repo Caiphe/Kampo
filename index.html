@@ -15,7 +15,7 @@
     <header class="header-container">
         <div class="top-header">
             <div class="custom-block-container">
-                <a href="">kampomedic@outlook.com</a>
+                <a href="" class="main-email">kampomedic@outlook.com</a>
                 <a>Call Now : +27 61 583 5469</a>
             </div>
         </div>
@@ -28,6 +28,7 @@
                 <li><a class="" href="appointment.html">APPOINTMENT</a></li>
                 <li><a class="" href="contact.html">CONTACT US</a></li>
             </ul>
+            <a class="toggle-mnu open-menu"><span></span></a>
         </div>
     </header>
 
@@ -40,7 +41,7 @@
         <div class="slider">
             <div class="each-slide item" style="background-image: url('assets/img/headers/header-banner.jpg');">
                 <div class="cutom-centered-block">
-                    <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span>
+                    <!-- <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span> -->
                     <h4 class="slide-text">
                         <span class="red-text"> Most Trusted </span>
                         <span class="white-text">Health Partner</span>
@@ -50,7 +51,7 @@
             </div>
             <div class="each-slide item" style="background-image: url('assets/img/headers/header-banner-1.jpg');">
                 <div class="cutom-centered-block">
-                    <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span>
+                    <!-- <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span> -->
                     <h4 class="slide-text">
                         <span class="red-text"> kampo your companion  </span>
                         <span class="white-text">in healthy long life</span>
@@ -60,7 +61,7 @@
             </div>
             <div class="each-slide item" style="background-image: url('assets/img/headers/header-banner.jpg');">
                 <div class="cutom-centered-block">
-                    <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span>
+                    <!-- <span class="slide-small-text">TOTAL HEALTH CARE SOLUTION</span> -->
                     <h4 class="slide-text">
                         <span class="red-text"> Most Trusted </span>
                         <span class="white-text">Health Partner</span>
@@ -121,9 +122,9 @@
         <div class="welcome-description cutom-centered-block">
             <div class="each-description img-container">
                 <div class="descript" data-aos="fade-down" data-aos-duration="500" data-aos-offset="100" style="background-image: url('/assets/img/descript-1.jpg');"></div>
-                <div class="descript" data-aos="fade-up" data-aos-duration="500" data-aos-offset="150" style="background-image: url('/assets/img/descript-2.jpg');"></div>
+                <div class="descript mobile-remaining-img" data-aos="fade-up" data-aos-duration="500" data-aos-offset="150" style="background-image: url('/assets/img/descript-2.jpg');"></div>
             </div>
-            <div class="each-description">
+            <div class="each-description descript-classic-container">
                 <div class="descript-classic" data-aos="fade-right" data-aos-offset="120" style="background-image: url('/assets/img/descript-3.jpg');"></div>
             </div>
 
@@ -258,6 +259,7 @@
     <script src="/assets/js/slick.js"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/custom.js"></script>
 
     <script>
         $('.slider').slick({
@@ -290,6 +292,15 @@
             cssEase: 'ease-in-out',
             prevArrow: $('.prev-testimonial'),
             nextArrow: $('.next-testimonial'),
+
+            responsive: [{
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            }
+        ],
         });
 
         AOS.init();

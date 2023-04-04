@@ -13,3 +13,5 @@ function loadWindow(){
 
 
 document.querySelector('#site-year').innerHTML = new Date().getFullYear();
+
+
