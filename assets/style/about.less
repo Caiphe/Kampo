@@ -6,6 +6,10 @@
     text-align: center;
     font-family: @MontMedium;
     color: #575757;
+
+    @media(max-width: 700px){
+        width: 90%;
+    }
 }
 
 .bg-cover{
@@ -18,12 +22,21 @@
     position: relative;
     width: 100%;
     display: flex;
-    height: 537px;
+    height: 400px;
+
+    @media(max-width: 500px){
+        flex-direction: column;
+        height: 800px;
+    }
 
     .half-container{
         width: 50%;
         height: 100%;
         position: relative;
+
+        @media(max-width: 500px){
+            width: 100%;
+        }
     }
 
     .details-gray{
@@ -33,6 +46,11 @@
             width: 391px;
             text-align: center;
             margin: 150px auto;
+
+            @media(max-width: 768px){
+                width: 90%;
+                margin: 70px auto auto;
+            }
 
             .block-heading{
                 font-family: @MontBold;
@@ -55,6 +73,11 @@
             width: 391px;
             text-align: center;
             margin: 150px auto;
+
+            @media(max-width: 768px){
+                width: 90%;
+                margin-top: 120px;
+            }
 
             .block-heading{
                 font-family: @MontBold;
@@ -92,6 +115,12 @@
         display: flex;
         justify-content: space-between;
 
+        @media(max-width: 1000px){
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .each-value{
             width: 276px;
             height: 251px;
@@ -100,6 +129,15 @@
             box-sizing: border-box;
             padding: 27px;
             border-radius: 5px;
+
+            @media(max-width: 1000px){
+                margin-bottom: 25px;
+            }
+
+            @media(max-width: 500px){
+                width: 90%;
+                height: auto;
+            }
 
             .value-heading{
                 color: @red;
@@ -126,6 +164,7 @@
     padding-top: 60px;
     position: relative;
     padding-bottom: 30px;
+    overflow: hidden;
 
     .doted-img-team{
         position: absolute;
@@ -143,6 +182,13 @@
         background-color: #F9F9F9;
         z-index: 2;
 
+        @media(max-width: 1060px){
+            flex-wrap: wrap;
+            width: 95%;
+            justify-content: center;
+            margin: 90px auto 40px;
+        }
+
         .each-team-card{
             width: 511px;
             height: 256px;
@@ -151,11 +197,20 @@
             overflow: hidden;
             display: flex;
             z-index: 2;
+            margin-bottom: 30px;
+
+            @media(max-width: 520px){
+                width: 90%;
+            }
 
             .doc-profile-image{
                 height: 259px;
                 width: 209px;
                 background-color: @blue;
+
+                @media(max-width: 600px){
+                    display: none;
+                }
             }
 
             .doctor-details{

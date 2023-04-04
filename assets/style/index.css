@@ -387,6 +387,11 @@
   flex-direction: column;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .internal-header-banner {
+    margin-top: 110px;
+  }
+}
 .internal-header-banner .internal-mini-header {
   font-size: 16px;
   color: #fff;

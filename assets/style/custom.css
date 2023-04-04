@@ -264,6 +264,7 @@
   width: 100%;
   height: 545px;
   background-color: #E4EEF4;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .bottom-container {
@@ -304,6 +305,7 @@
 @media (max-width: 768px) {
   .bottom-container .description-container .descript-block p {
     width: 95%;
+    font-size: 32px;
   }
 }
 .bottom-container .description-container .descript-block .action-btn {
@@ -386,6 +388,7 @@
   justify-content: center;
   flex-direction: column;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .internal-header-banner {

@@ -304,6 +304,7 @@
 @media (max-width: 768px) {
   .bottom-container .description-container .descript-block p {
     width: 95%;
+    font-size: 32px;
   }
 }
 .bottom-container .description-container .descript-block .action-btn {
@@ -459,6 +460,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .book-appointment-container {
+    flex-direction: column-reverse;
+  }
+}
 .book-appointment-container .each-appointment-container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -470,6 +476,19 @@
 }
 .book-appointment-container .each-appointment-container:nth-child(2) {
   width: 34%;
+}
+@media (max-width: 768px) {
+  .book-appointment-container .each-appointment-container {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  .book-appointment-container .each-appointment-container:nth-child(1) {
+    width: 100%;
+    position: relative;
+  }
+  .book-appointment-container .each-appointment-container:nth-child(2) {
+    width: 100%;
+  }
 }
 .book-appointment-container .each-appointment-container .doted-img {
   position: absolute;
@@ -599,12 +618,17 @@
   padding: 10px;
   border-radius: 2px;
 }
+@media (max-width: 768px) {
+  .book-appointment-container .appointment-details .medical-aids-container {
+    width: 90%;
+  }
+}
 .toast-error {
   width: 180px;
   position: fixed;
   top: 20px;
   background-color: #C91111;
-  z-index: 3;
+  z-index: 4;
   right: -400px;
   padding: 50px 25px 25px 25px;
   color: 15px;
