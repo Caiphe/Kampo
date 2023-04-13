@@ -544,7 +544,11 @@
   width: 100%;
   position: relative;
   padding-bottom: 90px;
-  overflow: hidden;
+}
+@media (max-width: 820px) {
+  .gray-container {
+    overflow: hidden;
+  }
 }
 .gray-container .doted-img {
   position: absolute;
