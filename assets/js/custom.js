@@ -1,3 +1,5 @@
+document.querySelector('#site-year').innerHTML = new Date().getFullYear();
+
 var openMenu = document.querySelector('.open-menu');
 var headerMenu = document.querySelector('.header-menu');
 
