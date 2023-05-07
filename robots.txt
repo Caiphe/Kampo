@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /index.php
+
+Sitemap: https://kampomedicalcentre.co.za/sitemap.xml

@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^home$   index.php [L]
+RewriteRule ^about-us$   about.php [L]
+RewriteRule ^contact-us$   contact.php [L]
+RewriteRule ^book-appointment$   appointment.php [L]
+RewriteRule ^our-services$   services.php [L]

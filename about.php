@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php 
+    include_once('header.php');
+?>
     <link href="/assets/style/about.css" rel="stylesheet" />
-    <link href="/assets/style/animate.css" rel="stylesheet" />
-    <link href="/assets/style/aos.css" rel="stylesheet" />
-    <title>Kampo Medical Center</title>
-</head>
-<body>
-    <header class="header-container">
-        <div class="top-header">
-            <div class="custom-block-container">
-                <a href="" class="main-email">kampomedic@outlook.com</a>
-                <a>Call Now : +27 53 831 1053</a>
-            </div>
-        </div>
-        <div class="main-header">
-            <a class="header-logo" href="/"><img src="/assets/img/logo.png" /></a>
-            <ul class="header-menu">
-                <li><a class="" href="/">HOME</a></li>
-                <li><a class="active" href="about.html">ABOUT</a></li>
-                <li><a class="" href="services.html">SERVICES</a></li>
-                <li><a class="" href="appointment.html">APPOINTMENT</a></li>
-                <li><a class="" href="contact.html">CONTACT US</a></li>
-            </ul>
-            <a class="toggle-mnu open-menu"><span></span></a>
-        </div>
-    </header>
 
     <!-- About content -->
     <div class="internal-header-banner" style="background-image: url('/assets/img/headers/internal-header.jpg');">
@@ -127,41 +100,8 @@
 
     <a class="whatsapp-button" href="https://wa.me/+27615835469" target="_blank"><img src="/assets/img/icons/whats-app.svg" /></a>
 
-    <!-- Bottom container -->
-     <div class="bottom-container">
-        <div class="cutom-centered-block description-container">
-            <div class="descript-block" data-aos="fade-right" data-aos-duration="400" data-aos-offset="150">
-                <p>
-                    <span class="red-text">We are pleased to offer you the chance</span> 
-                    <span class="blue-text">to have the health you need.</span>
-                </p>
 
-                <a class="blue-button" href="/appointment.html">APPOINTMENT</a>
-
-            </div>
-
-            <div class="doct-image-container" data-aos="fade-left" data-aos-duration="300" data-aos-offset="100">
-                <img src="/assets/img/footer-doctor.png" />
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Footer container -->
-    <footer class="footer-container">
-        <h5 class="footer-kampo">KAMPO MEDICAL CENTER</h5>
-        <ul class="social-icons">
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/facebook.svg" /></a></li>
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/linkedIn.svg" /></a></li>
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/instagram .svg" /></a></li>
-        </ul>
-        <p class="copyright-text"> © <span id="site-year"></span> Kampo Medical</p>
-
-    </footer>
-
-    <script src="/assets/js/aos.js"></script>
-    <script src="/assets/js/custom.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <?php 
+        include_once('footer.php');
+    ?>
 </body>

@@ -1,38 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/style/index.css" rel="stylesheet" />
-    <link href="/assets/style/slick-theme.css" rel="stylesheet" />
-    <link href="/assets/style/slick.css" rel="stylesheet" />
-    <link href="/assets/style/animate.css" rel="stylesheet" />
-    <link href="/assets/style/aos.css" rel="stylesheet" />
-    <title>Kampo Medical Center</title>
-</head>
-<body>
-    <header class="header-container">
-        <div class="top-header">
-            <div class="custom-block-container">
-                <a href="" class="main-email">kampomedic@outlook.com</a>
-                <a>Call Now : +27 53 831 1053</a>
-            </div>
-        </div>
-        <div class="main-header">
-            <a class="header-logo" href="/"><img src="/assets/img/logo.png" /></a>
-            <ul class="header-menu">
-                <li><a class="active" href="/">HOME</a></li>
-                <li><a class="" href="about.html">ABOUT</a></li>
-                <li><a class="" href="services.html">SERVICES</a></li>
-                <li><a class="" href="appointment.html">APPOINTMENT</a></li>
-                <li><a class="" href="contact.html">CONTACT US</a></li>
-            </ul>
-            <a class="toggle-mnu open-menu"><span></span></a>
-        </div>
-    </header>
-
-    <a class="whatsapp-button" href="https://wa.me/+27615835469" target="_blank"><img src="/assets/img/icons/whats-app.svg" /></a>
+    <?php 
+        include_once('header.php');
+    ?>
 
     <div class="header-slider slideshow">
             <button class="slick-button prev-button"><img src="/assets/img/icons/arrow-left.svg" /></button>
@@ -46,7 +14,7 @@
                         <span class="red-text"> Most Trusted </span>
                         <span class="white-text">Health Partner</span>
                     </h4>
-                    <a class="blue-button" href="/appointment.html">BOOK AN APPOINTMENT </a>
+                    <a class="blue-button" href="book-appointment">BOOK AN APPOINTMENT </a>
                 </div>
             </div>
             <div class="each-slide item" style="background-image: url('assets/img/headers/header-banner-1.jpg');">
@@ -56,7 +24,7 @@
                         <span class="red-text"> kampo your companion  </span>
                         <span class="white-text">in healthy long life</span>
                     </h4>
-                    <a class="blue-button" href="/appointment.html">BOOK AN APPOINTMENT </a>
+                    <a class="blue-button" href="book-appointment">BOOK AN APPOINTMENT </a>
                 </div>
             </div>
             <div class="each-slide item" style="background-image: url('assets/img/headers/header-banner.jpg');">
@@ -66,7 +34,7 @@
                         <span class="red-text"> Most Trusted </span>
                         <span class="white-text">Health Partner</span>
                     </h4>
-                    <a class="blue-button" href="/appointment.html">BOOK AN APPOINTMENT </a>
+                    <a class="blue-button" href="book-appointment">BOOK AN APPOINTMENT </a>
                 </div>
             </div>
         </div>
@@ -83,7 +51,7 @@
                     We give you easy access to a doctor from a comfort of your home.
                 </div>
     
-                <a class="action-btn">APPOINTMENT</a>
+                <a class="action-btn" href="book-appointment">APPOINTMENT</a>
             </div>
 
             <div class="each-action animated2 call-to-action-two">
@@ -110,7 +78,7 @@
             <div class="each-action animated3 call-to-action-three">
                 <img src="/assets/img/icons/call-user.svg" />
                 <div class="small-text">Emergency Cases</div>
-                <h4 class="action-heading">+27 53 831 1053</h4>
+                <a class="action-heading" href="tel:+27 53 831 1053">+27 53 831 1053</a>
                 <div class="action-description">
                     Use the above office number to get in touch with us in case of Emergency 
                 </div>
@@ -133,7 +101,7 @@
                 <p class="descripiton-text">
                     We give you easy access to a doctor, optometrist or dentist ... in our network, so you can get quality, private day-to-day healthcare at an affordable cost – without the added stress and hassles.
                 </p>
-                <a class="view-services red-button" href="/services.html">SERVICES</a>
+                <a class="view-services red-button" href="our-services">SERVICES</a>
 
             </div>
 
@@ -170,7 +138,7 @@
         </div>
 
         <div class="button-container">
-            <a class="red-button">VIEW MORE</a>
+            <a class="red-button" href="our-services">VIEW MORE</a>
         </div>
 
         <img src="/assets/img/icons/doted-design.svg" data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" class="doted-img" />
@@ -225,42 +193,12 @@
         </div>
     </div>
 
-    <!-- Bottom container -->
-    <div class="bottom-container">
-        <div class="cutom-centered-block description-container">
-            <div class="descript-block" data-aos="fade-right" data-aos-duration="400" data-aos-offset="150">
-                <p>
-                    <span class="red-text">We are pleased to offer you the chance</span> 
-                    <span class="blue-text">to have the health you need.</span>
-                </p>
+    <?php 
+        include_once('footer.php');
+    ?>
 
-                <a class="blue-button" href="/appointment.html">APPOINTMENT</a>
-
-            </div>
-
-            <div class="doct-image-container" data-aos="fade-left" data-aos-duration="300" data-aos-offset="100">
-                <img src="/assets/img/footer-doctor.png" />
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Footer container -->
-    <footer class="footer-container">
-        <h5 class="footer-kampo">KAMPO MEDICAL CENTER</h5>
-        <ul class="social-icons">
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/facebook.svg" /></a></li>
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/linkedIn.svg" /></a></li>
-            <li><a href="#" class="each-social"><img alt="" src="/assets/img/icons/instagram .svg" /></a></li>
-        </ul>
-        <p class="copyright-text"> © <span id="site-year"></span> Kampo Medical</p>
-    </footer>
-
-    <script src="/assets/js/jquery-2.js"></script>
     <script src="/assets/js/slick.js"></script>
     <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/aos.js"></script>
-    <script src="/assets/js/custom.js"></script>
 
     <script>
         $('.slider').slick({
@@ -304,7 +242,6 @@
         ],
         });
 
-        AOS.init();
     </script>
 </body>
 </html>

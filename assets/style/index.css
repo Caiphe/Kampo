@@ -648,9 +648,13 @@
   font-family: 'montserrat-regular', sans-serif;
   margin-top: 30px;
   cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .call-to-action-container .each-action .action-btn:hover {
   background-color: #C91111;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .welcome-description {
   position: relative;

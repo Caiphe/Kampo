@@ -698,3 +698,24 @@
   padding-top: 0px;
   margin-bottom: -5px;
 }
+.appointment-response {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.appointment-response .check-icon {
+  width: 220px;
+}
+.appointment-response .appointment-booked {
+  width: 270px;
+  text-align: center;
+  margin: 40px auto;
+  font-size: 25px;
+  font-family: 'montserrat-bold', sans-serif;
+}
+.appointment-response .last-text {
+  text-align: center;
+  color: #C91111;
+  font-size: 17px;
+  font-family: 'montserrat-regular', sans-serif;
+}
